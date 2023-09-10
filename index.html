@@ -1,0 +1,348 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>울진군통합도서관</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('header').mouseenter(function() {
+                $('.page').slideDown('fast');
+            })
+            $('header').mouseleave(function() {
+                $('.page').slideUp('fast');
+            })
+        })
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main-header {
+            margin: 20px 120px 0 120px;
+            overflow: hidden;
+
+        }
+        .main-logo {
+            display: block;
+            float: left;
+            margin-top: 10px;
+        }
+        .main-nav {
+            float: right;
+        }
+        .first-nav {
+            overflow: hidden;
+        }
+        .second-nav {
+            overflow: hidden;
+        }
+        .first-nav-cell {
+            float: right;
+            list-style-type: none;
+            padding: 0 5px 0 5px;
+            /* margin: 10px; */
+            font-size: 13px;
+            border-right: 1px solid black;
+        }
+        .first-nav-cell:nth-child(2) {
+            border-right: none;
+        }
+        .second-nav-cell {
+            float: right;
+            list-style-type: none;
+            margin: 20px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .second-nav-cell:hover {
+            color: red;
+        }
+        .first-nav-search {
+            margin-left: 10px;
+            float: right;
+        }
+        .main-section {
+            background-image: url(img/ibery.blur.png);
+            width: 100%;
+            height: 522px;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+            /* filter: blur(5px); */
+        }
+        .nav-deco-none {
+            text-decoration: none;
+        }
+        .img1 {
+            transition: all 0.5s linear;
+        }
+        .img1:hover {
+            content: url(img/img11.png);
+            transform: rotateY(360deg);
+        }
+        .img2 {
+            transition: all 0.5s linear;
+        }
+        .img2:hover {
+            content: url(img/img22.png);
+            transform: rotateY(360deg);
+        }
+        .img3 {
+            transition: all 0.5s linear;
+        }
+        .img3:hover {
+            content: url(img/img33.png);
+            transform: rotateY(360deg);
+        }
+        .img4 {
+            transition: all 0.5s linear;
+        }
+        .img4:hover {
+            content: url(img/img44.png);
+            transform: rotateY(360deg);
+        }
+        .img5 {
+            transition: all 0.5s linear;
+        }
+        .img5:hover {
+            content: url(img/img55.png);
+            transform: rotateY(360deg);
+        }
+        .img6 {
+            transition: all 0.5s linear;
+        }
+        .img6:hover {
+            content: url(img/img66.png);
+            transform: rotateY(360deg);
+        }
+        .img7 {
+            transition: all 0.5s linear;
+        }
+        .img7:hover {
+            content: url(img/img77.png);
+            transform: rotateY(360deg);
+        }
+        .img8 {
+            transition: all 0.5s linear;
+        }
+        .img8:hover {
+            content: url(img/img88.png);
+            transform: rotateY(360deg);
+        }
+        .img9 {
+            transition: all 0.5s linear;
+        }
+        .img9:hover {
+            content: url(img/img99.png);
+            transform: rotateY(360deg);
+        }
+        .sub-title {
+            font-family: "바탕체";
+            font-size: 33px;
+            font-weight: bold;
+            text-align: center;
+            padding: 40px 0 40px 0;
+            color: white;
+            text-shadow: 3px 3px 5px black;
+        }
+        .ul-tong {
+            color: #ffd943;
+        }
+        .table-center {
+            margin: 0 auto;
+        }
+        td {
+            padding: 4px;
+        }
+        .page {
+            display: none;
+            width: 100%;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+        }
+        .page-cover {
+            position: relative;
+        }
+        .page {
+            overflow: hidden;
+        }
+        .push-down-menu {
+            float: left;
+            
+
+        }
+        .push-down-menu-cell {
+            color: gray;
+            font-size: 12px;
+            padding: 10px;
+            text-align: center;
+            border-left: 1px solid gainsboro;
+        }
+        .push-down-p {
+            float: left;
+            padding: 30px;
+            font-weight: 600;
+        }
+        .main-footer {
+            background-color: #42565d;
+            color: white;
+            padding: 30px;
+            
+        }
+        .phone-num-cover {
+            margin: 0 50px 0 50px;
+        }
+        .phone-num-cover > div {
+            padding: 1px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <img src="img/logo.gif" alt="logo" class="main-logo">
+        <nav class="main-nav">
+            <ul class="first-nav">
+                <input type="text" class="first-nav-search">
+                <li class="first-nav-cell"><a href="#" class="nav-deco-none">사이트맵</a></li>
+                <li class="first-nav-cell"><a href="#" class="nav-deco-none">마이페이지</a></li>
+                <li class="first-nav-cell"><a href="#" class="nav-deco-none">회원가입</a></li>
+                <li class="first-nav-cell"><a href="#" class="nav-deco-none">로그인</a></li>
+                <li class="first-nav-cell"><a href="#" class="nav-deco-none">홈으로</a></li>
+                
+            </ul>
+            <ul class="second-nav">
+                <li class="second-nav-cell"><a href="#" class="nav-deco-none">작은도서관</a></li>
+                <li class="second-nav-cell"><a href="#" class="nav-deco-none">도서관소개</a></li>
+                <li class="second-nav-cell"><a href="#" class="nav-deco-none">도서관이용</a></li>
+                <li class="second-nav-cell"><a href="#" class="nav-deco-none">이용자세상</a></li>
+                <li class="second-nav-cell"><a href="#" class="nav-deco-none">문화마당</a></li>
+                <li class="second-nav-cell"><a href="#" class="nav-deco-none">도서관행사</a></li>
+                <li class="second-nav-cell"><a href="#" class="nav-deco-none">자료검색</a></li>
+                
+
+            </ul>
+        </nav>
+    </header>
+    <div class="page-cover">
+        <div class="page">
+            <hr>
+            <div class="push-down-p">
+                <p>책읽는 울진! 꿈과 희망을!</p>
+                <p>울진통합도서관</p>
+            </div>
+            <div class="push-down-menu">
+                <div class="push-down-menu-cell">통합자료검색</div>
+                <div class="push-down-menu-cell">새로 들어온 책</div>
+                <div class="push-down-menu-cell">이달의 추천도서</div>
+                <div class="push-down-menu-cell">대출베스트</div>
+                <div class="push-down-menu-cell">연속간행물</div>
+            </div>
+            <div class="push-down-menu">
+                <div class="push-down-menu-cell">이달의 행사</div>
+                <div class="push-down-menu-cell">포토갤러리</div>
+                <div class="push-down-menu-cell">온라인 신청</div>
+                <div class="push-down-menu-cell">북스타트</div>
+                <div class="push-down-menu-cell">책꾸러미신청</div>
+            </div>
+            <div class="push-down-menu">
+                <div class="push-down-menu-cell">강좌안내</div>
+                <div class="push-down-menu-cell">온라인수강신청</div>
+                <div class="push-down-menu-cell">강사등록신청</div>
+                <div class="push-down-menu-cell">문화행사</div>
+            </div>
+            <div class="push-down-menu">
+                <div class="push-down-menu-cell">공지사항</div>
+                <div class="push-down-menu-cell">이용자문의</div>
+                <div class="push-down-menu-cell">자주묻는질문</div>
+                <div class="push-down-menu-cell">분실물 찾기</div>
+                <div class="push-down-menu-cell">설문조사</div>
+                <div class="push-down-menu-cell">동영상자료</div>
+                <div class="push-down-menu-cell">자유게시판</div>
+            </div>
+            <div class="push-down-menu">
+                <div class="push-down-menu-cell">통합도서회원가입안내</div>
+                <div class="push-down-menu-cell">이용시간 및 휴관일</div>
+                <div class="push-down-menu-cell">도서대출 및 예약</div>
+                <div class="push-down-menu-cell">상호대차 안내</div>
+                <div class="push-down-menu-cell">타관반납서비스</div>
+                <div class="push-down-menu-cell">디지털도서실</div>
+                <div class="push-down-menu-cell">시청각실</div>
+                <div class="push-down-menu-cell">도서기증</div>
+            </div>
+            <div class="push-down-menu">
+                <div class="push-down-menu-cell">연혁</div>
+                <div class="push-down-menu-cell">조직 및 직원현황</div>
+                <div class="push-down-menu-cell">시설현황</div>
+                <div class="push-down-menu-cell">자료현황</div>
+                <div class="push-down-menu-cell">도서관갤러리</div>
+                <div class="push-down-menu-cell">오시는 길</div>
+            </div>
+            <div class="push-down-menu">
+                <div class="push-down-menu-cell">울진작은도서관</div>
+                <div class="push-down-menu-cell">근남작은도서관</div>
+                <div class="push-down-menu-cell">매화작은도서관</div>
+                <div class="push-down-menu-cell">기성작은도서관</div>
+                <div class="push-down-menu-cell">평해작은도서관</div>
+                <div class="push-down-menu-cell">온정작은도서관</div>
+                <div class="push-down-menu-cell">흥부작은도서관</div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="main-section">
+        <h2 class="sub-title">책읽는 울진! 꿈과 희망을! <span class="ul-tong">울진군 통합도서관</span></h2>
+        <table class="table-center">
+            <tr>
+                <td>
+                    <img src="img/img1.png" alt="" class="img1">
+                </td>
+                <td>
+                    <img src="img/img2.png" alt="" class="img2">
+                </td>
+                <td>
+                    <img src="img/img3.png" alt="" class="img3">
+                </td>
+                <td>
+                    <img src="img/img4.png" alt="" class="img4">
+                </td>
+                <td rowspan="2">
+                    <img src="img/img5.png" alt="" class="img5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/img6.png" alt="" class="img6">
+                </td>
+                <td>
+                    <img src="img/img7.png" alt="" class="img7">
+                </td>
+                <td>
+                    <img src="img/img8.png" alt="" class="img8">
+                </td>
+                <td>
+                    <img src="img/img9.png" alt="" class="img9">
+                </td>
+            </tr>
+        </table>
+        
+    </section>
+    <footer class="main-footer">
+        <div class="phone-num-cover">
+            <div>개인정보처리방침 이메일무단수집거부</div>
+            <div>울진남부도서관((36369) 경북 울진군 후포면 후포삼율로 194-13전화 : 054-788-1107팩스 : 054-788-1109</div>
+            <div>죽변면도서관(36315) 경북 울진군 죽변면 죽변북로 64-4전화 : 054-782-1874팩스 : 054-781-5373</div>
+            <div>울진작은도서관(36324) 울진군 울진읍 읍내8길 26 (KT울진지사 앞)전화 : 054-781-6650팩스 : 054-781-6870</div>
+            <div>근남작은도서관(36334) 울진군 근남면 울진북로 151-3 근남면문화체육센터 2층전화 : 054-781-6651팩스 : 054-781-6781</div>
+            <div>매화작은도서관(36339) 울진군 매화면 매화4길 3 매화면복지회관 1층전화 : 054-781-6652팩스 : 054-781-6782</div>
+            <div>기성작은도서관(36348) 울진군 기성면 척산길 67 복지회관 2층전화 : 054-788-6653팩스 : 054-788-6783</div>
+            <div>평해작은도서관(36366) 울진군 평해읍 평해7길 11 (구. 보건지소)전화 : 054-788-6654팩스 : 054-788-6785</div>
+            <div>온정작은도서관(36358) 울진군 온정면 소태로 23 (온정면사무소 앞)전화 : 054-788-6659팩스 : 054-788-6786</div>
+            <div>흥부작은도서관(36305) 경북 울진군 북면 부구4길 29-15 흥부문화센터 4층전화 : 054-783-8446팩스 : 054-783-8447</div>
+        </div>
+
+    </footer>
+</body>
+</html>
